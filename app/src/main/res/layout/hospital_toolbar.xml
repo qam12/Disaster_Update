@@ -1,0 +1,53 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:theme="@style/MyCustomtool"
+    android:id="@+id/statement_tool"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        >
+
+        <ImageView
+            android:id="@+id/backpress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/back"
+            android:layout_weight="1"
+            android:gravity="right"
+            />
+
+        <TextView
+            android:id="@+id/textView225"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital Details"
+            android:textSize="16sp"
+            android:textColor="@color/bg"
+
+            android:layout_weight="4"
+            android:gravity="center"
+
+            />
+
+        <ImageView
+            android:id="@+id/filteimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/log"
+            android:layout_weight="1"
+            android:gravity="right"
+
+            />
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

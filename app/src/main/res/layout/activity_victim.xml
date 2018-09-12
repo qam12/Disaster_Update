@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+>
+    <include
+        layout="@layout/victim_toolbar"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+            android:id="@+id/yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/viewImage"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/place_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            />
+
+
+            <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+            android:id="@+id/btnSelectPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/upload_icon"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
+
+            />
+
+            </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+
+
+
+        <EditText
+            android:id="@+id/vic_nam"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Name"
+            android:textColor="@color/bgwhite"
+            android:textColorHint="@color/bgwhite"
+            android:backgroundTint="@color/bgwhite"
+            android:inputType="text"
+            android:minLines="1"
+            android:maxLength="30"
+            android:lines="1"
+            android:maxLines="1"
+            android:textSize="13sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Phone"
+            android:id="@+id/vic_phon"
+            android:textColor="@color/bgwhite"
+            android:textColorHint="@color/bgwhite"
+            android:backgroundTint="@color/bgwhite"
+            android:inputType="number"
+            android:minLines="1"
+            android:maxLength="11"
+            android:lines="1"
+            android:maxLines="1"
+            android:textSize="13sp"
+
+            />
+
+        <EditText
+            android:id="@+id/vic_nic"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="NIC"
+            android:textColor="@color/bgwhite"
+            android:textColorHint="@color/bgwhite"
+            android:backgroundTint="@color/bgwhite"
+            android:inputType="number"
+            android:minLines="1"
+            android:maxLength="14"
+            android:lines="1"
+            android:maxLines="1"
+            android:textSize="13sp"
+
+            />
+
+        <!--<EditText-->
+            <!--android:id="@+id/vic_"-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:hint="Type"-->
+            <!--android:textColor="@color/bgwhite"-->
+            <!--android:textColorHint="@color/bgwhite"-->
+            <!--android:backgroundTint="@color/bgwhite"-->
+            <!--android:inputType="number"-->
+            <!--android:minLines="1"-->
+            <!--android:maxLength="30"-->
+            <!--android:lines="1"-->
+            <!--android:maxLines="1"-->
+            <!--android:textSize="13sp"-->
+
+            <!--/>-->
+
+        <EditText
+            android:id="@+id/vic_des"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Discription"
+            android:padding="10dp"
+            android:textColor="@color/bgwhite"
+            android:textColorHint="@color/bgwhite"
+            android:inputType="text"
+            android:minLines="1"
+            android:maxLength="30"
+            android:lines="1"
+            android:maxLines="1"
+            android:background="@drawable/border_white"
+            android:textSize="13sp"
+
+            />
+
+        <Button
+            android:id="@+id/vic_Send"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Submit"
+            android:textColor="@color/bg"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimary"/>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

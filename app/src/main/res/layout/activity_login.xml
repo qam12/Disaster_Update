@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="30px"
+    android:paddingRight="30px"
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        app:srcCompat="@mipmap/logo_l"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:id="@+id/Log_emaiId"
+        android:background="@drawable/label_border"
+        android:textColor="@color/bg"
+        android:textColorHint="@color/bg"
+        android:textSize="13sp"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:maxLength="120"
+        android:lines="1"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="50px"
+        android:background="@drawable/label_border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <EditText
+                android:id="@+id/Log_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="5.5"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLength="120"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:password="true"
+                android:textColor="@color/bg"
+                android:textColorHint="@color/bg"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_weight="0.5"
+                android:layout_marginTop="10dp"
+                android:id="@+id/showBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/show"
+                android:text="show password" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/logintnit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create an Account?"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/bg"
+                android:gravity=""/>
+
+            <TextView
+                android:id="@+id/SigPAth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Signup"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/bg"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@mipmap/city">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

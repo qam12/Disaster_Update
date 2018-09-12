@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="30px"
+    android:paddingRight="30px"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/viewImage"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/place_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/btnSelectPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/upload_icon"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="30dp"
+
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_marginTop="40px"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:id="@+id/Username"
+        android:background="@drawable/label_border"
+        android:textColor="@color/bg"
+        android:textColorHint="@color/bg"
+        android:textSize="13sp"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:maxLength="120"
+        android:lines="1"
+        />
+
+    <EditText
+        android:layout_marginTop="40px"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:id="@+id/Email"
+        android:background="@drawable/label_border"
+        android:textColor="@color/bg"
+        android:textColorHint="@color/bg"
+        android:textSize="13sp"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:maxLength="120"
+        android:lines="1"
+        />
+
+    <EditText
+        android:layout_marginTop="40px"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:id="@+id/Password"
+        android:background="@drawable/label_border"
+        android:textColor="@color/bg"
+        android:textColorHint="@color/bg"
+        android:textSize="13sp"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:maxLength="120"
+        android:lines="1"
+        />
+
+    <EditText
+        android:layout_marginTop="40px"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Phone"
+        android:inputType="textEmailAddress"
+        android:id="@+id/Phone"
+        android:background="@drawable/label_border"
+        android:textColor="@color/bg"
+        android:textColorHint="@color/bg"
+        android:textSize="13sp"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:maxLength="120"
+        android:lines="1"
+        />
+
+    <EditText
+        android:layout_marginTop="40px"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Organization"
+        android:inputType="textEmailAddress"
+        android:id="@+id/Organization"
+        android:background="@drawable/label_border"
+        android:textColor="@color/bg"
+        android:textColorHint="@color/bg"
+        android:textSize="13sp"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:maxLength="120"
+        android:lines="1"
+        />
+
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Signup"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/bg"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginBottom="20px"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already an Account"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/bg"
+                android:gravity=""/>
+
+            <TextView
+                android:id="@+id/LogRoot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/bg"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
